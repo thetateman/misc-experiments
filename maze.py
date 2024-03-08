@@ -54,7 +54,7 @@ def toHTML(grid, start, end, cell_size=10):
 
 m = Maze()
 start = time.time()
-m.generator = Prims(50, 50)
+m.generator = Prims(100, 100)
 m.generate()
 m.solver = BacktrackingSolver()
 m.generate_entrances()
